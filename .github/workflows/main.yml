@@ -1,0 +1,20 @@
+name: CI pipeline2
+
+on: [push]
+
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup environment
+        run: echo "Setting up an environment"
+
+      - name: Run Build Step
+        run: echo "buil successful"
+
+      - name: Run Tests
+        run: echo "Tests successful"
